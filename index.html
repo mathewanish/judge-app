@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>DMI Tech Chef</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/jquery.mobile-1.3.0.css" />
+    <link rel="stylesheet" href="css/jqm-docs.css" />
+    <link rel="stylesheet" href="css/UIcustom.css" />
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+        // Wait for device API libraries to load
+        //
+        function onLoad() {
+            document.addEventListener("deviceready", onDeviceReady, false);
+        }
+
+        // device APIs are available
+        //
+        function onDeviceReady() {
+            setTimeout(function () {
+                navigator.splashscreen.hide();
+            }, 2000);
+            // Register the event listener
+            //document.addEventListener("backbutton", onBackKeyDown, false);
+        }
+
+    </script>
+</head>
+<body class="DTbg" onload="onLoad();">
+    <div data-role="page" id="login" data-theme="c" class="tcb">
+        <div data-role="content">
+  
+            <div class="LoginHolder">
+          
+                <table width="100%" cellpadding="0" cellspacing="0" class="LoginTable">
+                    <tr>
+                        <td class="LoginLeft">
+                              <div class="SplashWords">
+                                 <p>
+                                Welcome to DMI’s 3rd annual Tech Chef grilling competition.</p>
+                            <p>
+                                This competition will test our team's ability to prepare various dishes for our
+                                guest judges.</p>
+                            <p>
+                                The most impressive team will receive a championship trophy and take home bragging
+                                rights for the year!</p>
+                            <p>
+                                Good luck to all!!</p>
+                                
+                                </div> 
+                      
+                        </td>
+                        <td class="LoginRight">
+                            <div class="LoginDiv">
+                            <div class="LogoHolder"><img src="images/TC-Logo.png" alt=""/></div>
+                               <div class="TitleDiv">
+                            
+                            <div class="SiteName">Judge Login</div>
+                            </div>
+                                <div class="LoginInputs">
+                                    <div data-role="fieldcontain" data-theme="c">
+                                        <label for="textinput-fc" data-inline="true">
+                                            </label>
+                                        <input name="txtTabUsername" id="txtTabUsername" maxlength="20" placeholder="Username" value=""
+                                            type="text" data-inline="true" />
+                                    </div>
+                                    <div data-role="fieldcontain" data-theme="c">
+                                        <label for="password">
+                                            </label>
+                                        <input name="txtTabPassword" id="txtTabPassword" maxlength="15" placeholder="Password" value=""
+                                            autocomplete="off" type="password" data-inline="true" />
+                                    </div>
+                                    <div data-role="fieldcontain" data-theme="c">
+                                        <a href="#scoreTab" id="btlTabLoginSubmit" name="btlTabLoginSubmit" data-role="button"
+                                            data-inline="true" onclick="return AuthenticateUser('judge', true);">Submit</a>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            
+                             
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="LoginHolderSP">
+
+                <table width="100%" cellpadding="0" cellspacing="0" class="LoginTable">
+                    <tr>
+                        <td class="Login">
+                            <div class="LoginDiv">
+                            <div class="LogoHolder"><img src="images/TC-Logo.png" alt=""/></div>
+                            <div class="TitleDiv">
+                            <div class="SiteLogo"><img src="images/TechChef_Logo.png"></div>
+                            <div class="SiteName">Judge Login</div>
+                            </div>
+                                <div class="LoginInputs">
+                                    <div data-role="fieldcontain">
+                                        <label for="textinput-fc" data-inline="true">
+                                           </label>
+                                        <input name="txtSPUsername" id="txtSPUsername" maxlength="20" placeholder="Username" value=""
+                                            type="text" data-inline="true" />
+                                    </div>
+                                    <div data-role="fieldcontain">
+                                        <label for="password">
+                                            </label>
+                                        <input name="txtSPPassword" id="txtSPPassword" maxlength="15" placeholder="Password" value=""
+                                            autocomplete="off" type="password" data-inline="true" />
+                                    </div>
+                                    <div data-role="fieldcontain">
+                                        <label for="password">
+                                        </label>
+                                        <a href="#scoreSP" id="btlSPLoginSubmit" name="btlSPLoginSubmit" data-role="button"
+                                            data-inline="true" onclick="return AuthenticateUser('judge', false);">Submit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <!-- /content -->
+        </div>
+    </div>
+    <div data-role="page" id="scoreTab" class="type-interior " data-theme="e">
+        <div data-role="header" data-position="fixed" data-theme="e">
+            <div id="tabWelcome" class="UserDiv">
+                    Welcome: <span>John Doe</span>
+            </div>
+            <h1>
+                TECHCHEF</h1>
+        </div>
+        <!-- /header -->
+        <div data-role="content" data-theme="e" >
+            <div class="content-primary">
+                <table width="100%" cellpadding="0" cellspacing="0" class="TopCategories">
+                    <tr>
+                    <td class="Appetizers">
+                        <a href="#" onclick="return SetCategory(true, 1, 'TabCatSpan', 'aTabCatSpan');">
+                            <div>
+                                <span id="aTabCatSpan" class="selected">Appetizers</span>
+                            </div>
+                        </a>
+                    </td>
+                    <td class="Entrees">
+                        <a href="#" onclick="return SetCategory(true, 2, 'TabCatSpan', 'eTabCatSpan');">
+                            <div>
+                                <span id="eTabCatSpan">Entrées</span>
+                            </div>
+                        </a>
+                    </td>
+                    <td class="Desserts">
+                        <a href="#" onclick="return SetCategory(true, 3, 'TabCatSpan', 'dTabCatSpan');">
+                            <div>
+                                <span id="dTabCatSpan">Desserts</span>
+                            </div>
+                        </a>
+                    </td>
+                    </tr>
+                </table>
+                <div id="tabTitle" class="TeamDiv">
+                    Team A
+                </div>
+                <div id="tabSubTitle" class="TitleDiv">
+                    Team A
+                </div>
+                <div id="divOutput" class="ScoreHolder">
+                </div>
+                <div style="width:100%; height:20px;"></div>
+            </div>
+            <div class="content-secondary" data-theme="e">
+                <ul id="leftTeamsList" data-role="listview" data-theme="e" data-dividertheme="d">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="scoreSP" class="type-interior" data-theme="e">
+        <div data-role="panel" data-position-fixed="true" data-theme="e" id="teamsPanel"
+            class="teamPanel" data-display="overlay">
+            <ul id="panelTeamsList" data-role="listview" data-theme="e" class="nav-search">
+            </ul>
+        </div>
+        <!-- /panel -->
+        <div data-role="header" data-position="fixed" data-theme="e">
+            <div id="SPWelcome" class="UserDiv">
+                    Welcome: <span>John Doe</span>
+             </div>
+            <h1>
+                TECHCHEF</h1>
+            <a href="#teamsPanel" id="anchorTeamPanel" data-icon="bars" class="aTeamPanel">Teams</a>
+        </div>
+        <!-- /header -->
+        <div data-role="content" data-theme="e">
+            <table width="100%" cellpadding="0" cellspacing="0" class="TopCategories">
+                <tr>
+                <td class="Appetizers">
+                    <a href="#" onclick="return SetCategory(false, 1, 'SPCatSpan', 'aSPCatSpan');">
+                        <div>
+                            <span id="aSPCatSpan" class="selected">Appetizers</span>
+                        </div>
+                    </a>
+                </td>
+                <td class="Entrees">
+                    <a href="#" onclick="return SetCategory(false, 2, 'SPCatSpan', 'eSPCatSpan');">
+                        <div>
+                            <span id="eSPCatSpan">Entrées</span>
+                        </div>
+                    </a>
+                </td>
+                <td class="Desserts">
+                    <a href="#" onclick="return SetCategory(false, 3, 'SPCatSpan', 'dSPCatSpan');">
+                        <div>
+                            <span id="dSPCatSpan">Desserts</span>
+                        </div>
+                    </a>
+                </td>
+                </tr>
+            </table>
+            <div id="div1" class="SMbodybg">
+                <div id="SPTitle" class="TeamDiv">
+                    Team A
+                </div>
+                <div id="SPSubTitle" class="TitleDiv">
+                    Team A
+                </div>
+                <div id="divSPOutput">
+                </div>
+                <div style="width: 100%; height: 20px;">
+                </div>
+            </div>
+        </div>
+        <!-- /content -->
+    </div>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript">
+        $(document).on("mobileinit", function () {
+            $.mobile.defaultPageTransition = 'slide';
+            $.mobile.phonegapNavigationEnabled = true;
+
+            $.mobile.loader.prototype.options.textVisible = true;
+            $.mobile.loader.prototype.options.theme = "a";
+            $.mobile.loader.prototype.options.html = "";
+        });
+        
+    </script>
+    <script type="text/javascript" src="js/jqm-docs.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile-1.3.0.min.js"></script>
+    <script type="text/javascript">
+        $(window).on("orientationchange", function (event) {
+            if ($.mobile.activePage.attr('id') == "scoreTab") {
+                $('.content-primary').css({ 'min-height': (GetScreenHeight() - 57) + 'px' });
+            }
+        });
+    </script>
+    <script type="text/javascript" src="js/custom.js"></script>
+</body>
+</html>

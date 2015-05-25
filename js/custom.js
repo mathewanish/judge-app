@@ -94,7 +94,7 @@ function onBackKeyDown() {
         try {
             navigator.notification.confirm('Are you sure you want to Log Out?',
             function (button) { if (button == 1) $.mobile.changePage("index.html", { transition: "slidedown", changeHash: true }); },
-            'TECH CHEF', 'Yes,Cancel');
+            'TECH CHEF', 'Yes,No');
         }
         catch (Err) {
 
@@ -815,7 +815,7 @@ function confirmSubmit(isTab) {
 
             try {
                 navigator.notification.confirm('Do you want to submit the score?', function (button) { if (button == 1) SubmitScore(isTab, scoreUpdateString); },
-            'TECH CHEF', 'Yes,Cancel');
+            'TECH CHEF', 'Yes,No');
             }
             catch (Err) {
 

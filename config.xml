@@ -7,7 +7,8 @@
   <gap:plugin name="org.apache.cordova.dialogs" />
   <gap:plugin name="org.apache.cordova.splashscreen" />
   <gap:plugin name="org.apache.cordova.network-information" />
-  
+  <gap:plugin name="org.apache.cordova.statusbar" />
+
   <!-- Platform on which the App is Supported -->
   <gap:platform name="ios" />
 
@@ -20,7 +21,7 @@
   <preference name="exit-on-suspend" value="true" />
   <!-- iOS: Auto hides the splash on iOS -->
   <preference name="AutoHideSplashScreen" value="false" />
-  
+   	
   <!-- Default Icon-->
   <icon src="icon.png" />
 

@@ -94,7 +94,7 @@ function onBackKeyDown() {
         try {
             navigator.notification.confirm('Are you sure you want to Log Out?',
             function (button) { if (button == 1) $.mobile.changePage("index.html", { transition: "slidedown", changeHash: true }); },
-            'TechChef', 'Yes,Cancel');
+            'TECH CHEF', 'Yes,Cancel');
         }
         catch (Err) {
 
@@ -369,7 +369,7 @@ function SetEntities(entities) {
 }
 
 function NotifyUser(message) {
-    showAlert(message, 'TechChef', 'OK');
+    showAlert(message, 'TECH CHEF', 'OK');
 }
 
 $("#scoreTab").on("pagebeforecreate", function (event, ui) {
@@ -572,7 +572,7 @@ function SetScore() {
     }
     else {
         if (!SCORING_OPEN)
-            $('#btnSubmitScore').html('<div class="submitMessage" style="padding:5px">Scoring for DMI’s 3rd annual Tech Chef grilling competition is closed.</div>');
+            $('#btnSubmitScore').html('<div class="submitMessage" style="padding:5px">Scoring for DMI’s 4th annual TECH CHEF grilling competition is closed.</div>');
 
         $('#btnSubmitScore').attr('style', 'display:inline-block !important; text-align: center; width: 100%;');
     }
@@ -815,7 +815,7 @@ function confirmSubmit(isTab) {
 
             try {
                 navigator.notification.confirm('Do you want to submit the score?', function (button) { if (button == 1) SubmitScore(isTab, scoreUpdateString); },
-            'TechChef', 'Yes,Cancel');
+            'TECH CHEF', 'Yes,Cancel');
             }
             catch (Err) {
 

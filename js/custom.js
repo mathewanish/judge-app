@@ -43,7 +43,7 @@ var TITLE_FORMAT = "{0} - {1}";
 var EMAIL_DOMAIN = "dminc.com";
 var SCORING_OPEN = true;
 
-var ISCLIENTAPP = false;
+var ISCLIENTAPP = true;
 
 $("#login").on("pagebeforecreate", function (event, ui) {
     //SetContentPrimaryMinHeight();

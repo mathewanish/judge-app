@@ -62,7 +62,7 @@ border:0;
 	background-image:      -o-linear-gradient( #f9c635 /*{c-bup-background-start}*/, #e9a80b /*{c-bup-background-end}*/); /* Opera 11.10+ */
 	background-image:         linear-gradient( #f9c635 /*{c-bup-background-start}*/, #e9a80b /*{c-bup-background-end}*/);
 	background-image:none; 
-	background:#117474;
+	background:#FF9C22;
 	width:100%;
 	font-weight:normal
 }
@@ -193,7 +193,7 @@ width:auto;
 .SiteName{
 font-family:Arial,sans-serif;
 font-size:1em;
-color:#117474;
+color:#000;
 text-align:center
 }
 
@@ -358,8 +358,10 @@ width:100%
 float:none;
 margin:0;
 width:100%;
-background:#56bebd;
+background:#FDAE4C;
 color: #fff /*{c-bup-color}*/;
+text-shadow: 0 /*{c-bup-shadow-x}*/ 0 /*{c-bup-shadow-y}*/ 0 /*{c-bup-shadow-radius}*/ #777 /*{c-bup-shadow-color}*/;
+font-weight:normal
 }
 
 .LoginInputs .ui-btn-corner-all {
@@ -504,23 +506,7 @@ width:auto
 .LoginHolder{
 display:block !important
 }
-.LoginTable{
-width:99%;
-margin:0 auto;
-}
 
-.LoginLeft , .SplashWords{
-display:none
-}
-
-.LoginRight{
-width:100% ;
-vertical-align:middle;
-}
-.LoginDiv{
-width:80%;
-margin:200px auto 0;
-}
 
 #btlTabLoginSubmit{
 margin-top:1.1em
@@ -614,9 +600,9 @@ background-color:#f5c98c;
 /*---IPAD CLASSES--*/
 .tcb{
 
-	background-image:url(../images/TCBackground-ipad-potrait.jpg) !important ;
-	background-position:left top;
-	background-size: 100% auto !important
+background-image:url(../images/TCBackground.jpg) !important ;
+background-position:left top;
+background-size: cover !important
 }
 
 #scoreTab{
@@ -653,23 +639,41 @@ margin:0
 }
 
 .LoginTable{
-width:99%;
-margin:0 auto;
+width:100%;
+position:absolute;
+top:18%;
+
 }
 
 
-.LoginLeft , .SplashWords{
-display:block
-}
 .LoginLeft{
-width:45%;
-padding:5px;
-vertical-align:middle;
+width:auto;
+padding:0;
+vertical-align:bottom;
+background-color:#fff;
+}
+
+.LoginLeft img{
+height:auto;
+width:800px;
+max-width:none
+}
+
+.LoginLeft span{
+position:absolute;
+top:20px;
+left:22px;
+font-size:24px;
+z-index:100
 }
 
 .LoginRight{
-width:55%;
 vertical-align:middle;
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(left, #ffffff 26%, #ffffff 26%, #f9da8b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #ffffff 26%,#ffffff 26%,#f9da8b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #ffffff 26%,#ffffff 26%,#f9da8b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9da8b',GradientType=1 ); /* IE6-9 */
 }
 
 
@@ -1144,9 +1148,9 @@ padding:17px 10px 0;
 @media only screen and (min-width :900px)  {
 	
 .tcb{
-background-image:url(../images/TCBackground-ipad.jpg) !important ;
+background-image:url(../images/TCBackground.jpg) !important ;
 background-position:left top;
-background-size: 100% auto !important
+background-size: cover !important
 }
 
 .ScoreHolder{
@@ -1199,16 +1203,21 @@ position:absolute;
 bottom:0;
 }
 
-.LoginLeft{
-width:45%;
-vertical-align:middle;
-padding:0 30px 20px;
+.LoginLeft img{
+height:auto;
+width:600px;
+max-width:none;
+position:relative;
+top:5px
+}
+
+.LoginRight {
+width:50%
 }
 
 .LoginDiv{
-width:55%;
-margin:0px auto 0;
-margin-top:-10px
+width:90%;
+margin:20px auto 0;
 }
 
 .SplashWords{
@@ -1220,21 +1229,13 @@ margin-top:250px;
 
 @media only screen and (min-width :1024px)  {
 	
-body{
-background-size: contain !important;
-}
+
 }
 
 
 @media only screen and (min-width :1025px)  {
 	
-.tcb{
-	width:100%;
-	height:100%;
-background-image:url(../images/TCBackground.jpg) !important ;
-background-position:left top;
-background-size: 100% AUTO!important
-}
+
 
 .LoginLeft {
 width:50%

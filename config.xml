@@ -5,7 +5,7 @@
   <author href="http://DMInc.com" email="amathew@dminc.com">Anish Mathew</author>
 
   <gap:plugin name="org.apache.cordova.dialogs" />
-  <gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7" /> 
+  <!-- <gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7" /> -->
   <gap:plugin name="org.apache.cordova.network-information" />
   <gap:plugin name="org.apache.cordova.statusbar" />
 

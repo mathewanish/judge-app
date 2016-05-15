@@ -24,6 +24,7 @@
   <preference name="AutoHideSplashScreen" value="false" />
   <preference name="SplashScreenDelay" value="3000"/>
   <preference name="StatusBarOverlaysWebView" value="true" />
+  <preference name="StatusBarBackgroundColor" value="#000000" />
   <preference name="StatusBarStyle" value="lightcontent" />
   
   <!-- Default Icon-->

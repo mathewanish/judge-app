@@ -13,7 +13,7 @@
   <gap:platform name="ios" />
 
   <!-- Preferences-->
-  <preference name="phonegap-version" value="3.7.0" />
+  <preference name="phonegap-version" value="cli-5.1.1" />
   <preference name="orientation" value="landscape" />
   <preference name="target-device" value="tablet" />
   <preference name="fullscreen" value="true" />
@@ -21,6 +21,7 @@
   <preference name="exit-on-suspend" value="true" />
   <!-- iOS: Auto hides the splash on iOS -->
   <preference name="AutoHideSplashScreen" value="false" />
+  <preference name="SplashScreenDelay" value="3000"/>
    	
   <!-- Default Icon-->
   <icon src="icon.png" />

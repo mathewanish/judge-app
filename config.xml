@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.DMI.jTechChef" version="0.0.1">
+<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.DMI.jTechChef" version="0.0.2">
   <name>jTECH CHEF</name>
   <description>App for DMI’s 5th annual TECH CHEF grilling competition.</description>
   <author href="http://DMInc.com" email="amathew@dminc.com">Anish Mathew</author>

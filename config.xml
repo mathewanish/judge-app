@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.DMI.jTechChef" version="0.0.2">
+<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.DMI.jTechChef" version="0.0.3">
   <name>jTECH CHEF</name>
-  <description>App for DMI’s 5th annual TECH CHEF grilling competition.</description>
+  <description>App for DMI’s 6th annual TECH CHEF grilling competition.</description>
   <author href="http://DMInc.com" email="amathew@dminc.com">Anish Mathew</author>
 
   <plugin name="org.apache.cordova.dialogs" />
@@ -14,7 +14,7 @@
 
   <content src="index.html" />
   <!-- Preferences-->
-  <preference name="phonegap-version" value="3.7.0" />
+  <preference name="phonegap-version" value="cli-6.0.0" />
   <preference name="orientation" value="landscape" />
   <preference name="target-device" value="tablet" />
   <preference name="fullscreen" value="true" />

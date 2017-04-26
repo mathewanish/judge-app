@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/jquery.mobile-1.3.0.css" />
     <link rel="stylesheet" href="css/jqm-docs.css" />
     <link rel="stylesheet" href="css/UIcustom.css" />
+	<link rel="stylesheet" href="css/UIcustom-new.css" />
     <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
     <script type="text/javascript" charset="utf-8">
 
@@ -37,19 +38,31 @@
                 <table width="100%" cellpadding="0" cellspacing="0" class="LoginTable">
                     <tr>
                         <td class="LoginLeft">
-                              <span>TECH CHEF 2015 Winners</span>
-                        <img src="images/WT-photo.jpg" alt=""/>
-                      
+                           
+                            
+                            <div class="SplashWords">
+                                <p>
+                                    Welcome to DMI’s 6th annual TECH CHEF grilling competition.</p>
+                                <p>
+                                    This competition will test our team's ability to prepare various dishes for our
+                                    guest judges.</p>
+                                <p>
+                                    The most impressive team will receive a championship trophy and take home bragging
+                                    rights for the year!</p>
+                                <p class="good-luck-text">
+                                    Good luck to all!!</p>
+                            </div>
                         </td>
-                        
-                        <td style="width:1px">&nbsp;</td>
                         <td class="LoginRight">
                             <div class="LoginDiv">
+							<div class="LoginDivInner">
                             <div class="LogoHolder"><img src="images/TC-Logo.png" alt=""/></div>
-                               <div class="TitleDiv">
+								<div class="TitleDiv">
                             
-                            <div class="SiteName">Judge Login</div>
-                            </div>
+									<div class="SiteName">
+                                        <strong>Judge</strong> Login
+									</div>
+								</div>
                                 <div class="LoginInputs">
                                     <div data-role="fieldcontain" data-theme="c">
                                         <label for="textinput-fc" data-inline="true">
@@ -65,13 +78,13 @@
                                     </div>
                                     <div data-role="fieldcontain" data-theme="c">
                                         <a href="#scoreTab" id="btlTabLoginSubmit" name="btlTabLoginSubmit" data-role="button"
-                                            data-inline="true" onclick="return AuthenticateUser('judge', true);">Submit</a>
+                                            data-inline="true" onclick="return AuthenticateUser('judge', true);">SUBMIT</a>
                                     </div>
                                 </div>
                             
                             </div>
                             
-                             
+                             </div>
                         </td>
                     </tr>
                 </table>
@@ -82,31 +95,35 @@
                     <tr>
                         <td class="Login">
                             <div class="LoginDiv">
-                            <div class="LogoHolder"><img src="images/TC-Logo.png" alt=""/></div>
-                            <div class="TitleDiv">
-                            <div class="SiteLogo"><img src="images/TechChef_Logo.png"></div>
-                            <div class="SiteName">Judge Login</div>
-                            </div>
-                                <div class="LoginInputs">
-                                    <div data-role="fieldcontain">
-                                        <label for="textinput-fc" data-inline="true">
-                                           </label>
-                                        <input name="txtSPUsername" id="txtSPUsername" maxlength="20" placeholder="Username" value=""
-                                            type="text" data-inline="true" />
-                                    </div>
-                                    <div data-role="fieldcontain">
-                                        <label for="password">
-                                            </label>
-                                        <input name="txtSPPassword" id="txtSPPassword" maxlength="15" placeholder="Password" value=""
-                                            autocomplete="off" type="password" data-inline="true" />
-                                    </div>
-                                    <div data-role="fieldcontain">
-                                        <label for="password">
-                                        </label>
-                                        <a href="#scoreSP" id="btlSPLoginSubmit" name="btlSPLoginSubmit" data-role="button"
-                                            data-inline="true" onclick="return AuthenticateUser('judge', false);">Submit</a>
-                                    </div>
-                                </div>
+								<div class="LoginDivInner">
+									<div class="LogoHolder">
+										<img src="images/TC-Logo.png" alt=""/>
+									</div>
+									<div class="TitleDiv">
+										<div class="SiteLogo"><img src="images/TechChef_Logo.png"></div>
+										<div class="SiteName">Judge Login</div>
+									</div>
+									<div class="LoginInputs">
+											<div data-role="fieldcontain">
+												<label for="textinput-fc" data-inline="true">
+												   </label>
+												<input name="txtSPUsername" id="txtSPUsername" maxlength="20" placeholder="Username" value=""
+													type="text" data-inline="true" />
+											</div>
+											<div data-role="fieldcontain">
+												<label for="password">
+													</label>
+												<input name="txtSPPassword" id="txtSPPassword" maxlength="15" placeholder="Password" value=""
+													autocomplete="off" type="password" data-inline="true" />
+											</div>
+											<div data-role="fieldcontain">
+												<label for="password">
+												</label>
+												<a href="#scoreSP" id="btlSPLoginSubmit" name="btlSPLoginSubmit" data-role="button"
+													data-inline="true" onclick="return AuthenticateUser('judge', false);">Submit</a>
+											</div>
+									</div>
+								</div>
                             </div>
                         </td>
                     </tr>

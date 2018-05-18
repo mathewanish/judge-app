@@ -572,7 +572,7 @@ function SetScore() {
     }
     else {
         if (!SCORING_OPEN)
-            $('#btnSubmitScore').html('<div class="submitMessage" style="padding:5px">Scoring for DMI’s 6th annual TECH CHEF grilling competition is closed.</div>');
+            $('#btnSubmitScore').html('<div class="submitMessage" style="padding:5px">Scoring for DMI’s 7th annual TECH CHEF grilling competition is closed.</div>');
 
         $('#btnSubmitScore').attr('style', 'display:inline-block !important; text-align: center; width: 100%;');
     }

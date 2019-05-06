@@ -15,7 +15,7 @@ var SCORE_UPDATE = '{"Category_Id":{0},"Rating":{1},"SubCategory_Id":{2},"Team_I
 var SCORES_UPDATE = '[{0}]';
 
 
-var SCORE_SUBMIT_BUTTON = '<div id="btnSubmitScore" style="display:none !important; text-align: center; width: 100%;"><a href="#" data-role="button" data-inline="true" onclick="return confirmSubmit({0});">Submit Score</a><div class="submitMessage">Once you submit, you will not able to edit the scores again.</div></div>';
+var SCORE_SUBMIT_BUTTON = '<div id="btnSubmitScore" style="display:none !important; text-align: center; width: 100%;"><a href="#" data-role="button" data-inline="true" onclick="return confirmSubmit({0});">Submit Score</a><div class="submitMessage">Once you submit, you will not be able to edit the scores again.</div></div>';
 var SCORE_SUBMIT_BUTTON_HIDE = '<div id="btnSubmitScore" style="display:none !important; text-align: center; width: 100%;height:20ox;">&nbsp;<div class="submitMessage">{0}</div></div>';
 
 var UserID = "";
